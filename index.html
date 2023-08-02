@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="main">
+        <!-- <div class="mobile-nav-bar">
+                
+            <a href=""><span class="material-symbols-outlined">home</span></a>
+            <a href=""><span class="material-symbols-outlined">full_coverage</span></a>
+            <a href=""><span class="material-symbols-outlined">list_alt</span></a>
+            <a href=""><span class="material-symbols-outlined">person</span></a>
+            <a href=""><span class="material-symbols-outlined">search</span></a>
+        </div> -->
+        <nav>
+            <div class="top">
+                <a href=""><span class="material-symbols-outlined">cruelty_free</span></a>
+                <a href=""><span class="material-symbols-outlined">search</span></a>
+            </div>
+            <div class="middle">
+                <a href=""><span class="material-symbols-outlined">home</span></a>
+                <a href=""><span class="material-symbols-outlined">full_coverage</span></a>
+                <a href=""><span class="material-symbols-outlined">list_alt</span></a>
+                <a href=""><span class="material-symbols-outlined">person</span></a>            
+            </div>
+            <div class="bottom">
+                <a href=""><span class="material-symbols-outlined">notifications</span></a>
+                <a href=""><span class="material-symbols-outlined">logout</span></a>
+            </div>
+            
+        </nav>
+        <div class="feed">
+            <div class="welcome">
+                <img src="./assets/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="">
+                <div class="name">
+                    <h1>Hi Mike,</h1>
+                    <h5>welcome back</h5>
+                </div>
+            </div>
+            <div class="money">
+                <h3>Today</h3>
+                <h1>$19,892</h1>
+                <h6>Account Balance</h6>
+                <h3>$4,000</h3>
+                <h6>Year-to-Date Contributions</h6>
+                <h3>$1,892</h3>
+                <h6>Total Interest</h6>
+                <button>I want to <span class="material-symbols-outlined">arrow_drop_down</span></button>
+            </div>
+            <div class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <h6>2020-08-07</h6>
+                <h3 class="recent-transactions-inner" >Withdrawal Transfer to Bank-XXX11</h3>
+                <h6>2020-08-07</h6>
+                <h3 class="recent-transactions-inner" >Withdrawal Transfer to Bank-XXX11</h3>
+                <h6>2020-08-07</h6>
+                <h3 class="recent-transactions-inner" >Withdrawal Transfer to Bank-XXX11</h3>
+
+            </div>
+        </div>
+        <div class="analytics">
+            <div class="retirement-income">
+                <h4>Retirement Income</h4>
+                <h2>Starting Year 2056</h2>
+                <div class="goals">
+                    <div class="goals-inner">
+                        <h1>$300,000</h1>
+                        <h6>My Goal</h6>
+                        
+                    </div>
+                    <div class="goals-inner">
+                        <h1>59%</h1>
+                        <h6>Goal Achieved</h6>
+                    </div>
+                    <div class="goals-inner">
+                        <h1>$300</h1>
+                        <h6>Est. Monthly Income</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="graph">
+                <h2>Contributions Overtime</h2>
+                <div class="graphs">
+                    <canvas id="bar-graph">
+                </div>
+
+                </canvas>
+            </div>
+            <div class="comparison">
+                <h2>How do I compare to my peers?</h2>
+                <h6>These numbers respresent current goal achievement</h6>
+                <div class="comparison-bottom">
+                    <div class="demographics">
+                        <h5><span class="demographics-inner">Age:</span> Under 30 <span class="material-symbols-outlined">arrow_drop_down</span></h5>
+                        <h5><span class="demographics-inner">Salary:</span> K 20-K 30 <span class="material-symbols-outlined">arrow_drop_down</span></h5>
+                        <h5><span class="demographics-inner">Gender:</span> male <span class="material-symbols-outlined">arrow_drop_down</span></h5>
+                    </div>
+                    <div class="progress-bars">                        
+                        <div class="progress-bar">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                78%
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                95%
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                59%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div class="retirement-strategy">
+                <h3>Retirement Strategy</h3>
+                <h5>Employee Contribution</h5>
+                <div class="PB-range-slider-div">
+                    <input type="range" min="0" max="100" value="50" class="PB-range-slider" id="myRange">
+                    <p class="PB-range-slidervalue">12%</p>
+                    </div>
+                    <h5>Retirement Age</h5>
+                <div class="PB-range-slider-div">
+                    <input type="range" min="0" max="100" value="50" class="PB-range-slider" id="myRange">
+                    <p class="PB-range-slidervalue">12%</p>
+                    </div>
+                <hr>
+                <div class="last-inner">
+                    <h4>Employers Contribution</h4><h4>8.4%</h4>
+                </div>
+                <div class="last-inner"><h4>Interest Rate</h4><h4>5%</h4></div>
+                <button>Update</button>
+                <p>View Help Docs ></p>
+                </div>
+            <div class="ad">
+                <h3>Are you considering a <br><span>Housing Advance?</span></h3>
+                <p>
+                    Limited time reduced interest.
+                </p>
+                <h6>Learn More ></h6>
+            </div>
+        </div>   
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
